@@ -1,0 +1,915 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="CannaPlug checkout.">
+
+    <title>Checkout | CannaPlug</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- AGE VERIFICATION -->
+
+    <div class="age-gate" id="ageGate">
+
+        <div class="age-gate-backdrop"></div>
+
+        <div class="age-card">
+
+            <div class="age-logo">
+                CANNA<span>PLUG</span>
+            </div>
+
+            <div class="age-icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <p class="age-label">
+                AGE RESTRICTED
+            </p>
+
+            <h1>
+                Welcome to CannaPlug
+            </h1>
+
+            <p class="age-message">
+                You must be 18 years or older to enter
+                this website.
+            </p>
+
+            <div class="age-actions">
+
+                <button class="btn btn-primary"
+                        id="ageEnter">
+
+                    <i class="fa-solid fa-check"></i>
+                    I am 18+
+
+                </button>
+
+                <button class="btn btn-secondary"
+                        id="ageExit">
+
+                    Exit Website
+
+                </button>
+
+            </div>
+
+            <p class="age-notice">
+
+                By entering this website, you confirm
+                that you meet the minimum legal age
+                requirement applicable to you.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- HEADER -->
+
+    <header class="site-header"
+            id="siteHeader">
+
+        <div class="header-container">
+
+
+            <a href="index.html"
+               class="brand">
+
+                <div class="brand-mark">
+                    CP
+                </div>
+
+                <div class="brand-text">
+
+                    <strong>
+                        CANNA<span>PLUG</span>
+                    </strong>
+
+                    <small>
+                        CONNECTED TO QUALITY
+                    </small>
+
+                </div>
+
+            </a>
+
+
+
+            <nav class="main-nav">
+
+                <a href="index.html"
+                   class="nav-link">
+
+                    Home
+
+                </a>
+
+                <a href="shop.html"
+                   class="nav-link">
+
+                    Shop
+
+                </a>
+
+                <a href="about.html"
+                   class="nav-link">
+
+                    About
+
+                </a>
+
+                <a href="gallery.html"
+                   class="nav-link">
+
+                    Gallery
+
+                </a>
+
+                <a href="reviews.html"
+                   class="nav-link">
+
+                    Reviews
+
+                </a>
+
+                <a href="faq.html"
+                   class="nav-link">
+
+                    FAQ
+
+                </a>
+
+                <a href="contact.html"
+                   class="nav-link">
+
+                    Contact
+
+                </a>
+
+            </nav>
+
+
+
+            <div class="header-actions">
+
+
+                <button class="header-icon"
+                        id="searchToggle"
+                        aria-label="Search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+
+                <a href="cart.html"
+                   class="header-icon cart-button">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <span class="cart-count"
+                          id="cartCount">
+
+                        0
+
+                    </span>
+
+                </a>
+
+
+                <button class="mobile-menu-button"
+                        id="mobileMenuButton"
+                        aria-label="Open menu">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MOBILE NAV -->
+
+        <div class="mobile-nav"
+             id="mobileNav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="reviews.html">
+                Reviews
+            </a>
+
+            <a href="faq.html">
+                FAQ
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </div>
+
+
+
+        <!-- SEARCH -->
+
+        <div class="search-panel"
+             id="searchPanel">
+
+            <div class="search-container">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="siteSearch"
+                    placeholder="Search products, categories..."
+                    autocomplete="off">
+
+                <button id="closeSearch"
+                        type="button">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="search-results"
+                 id="searchResults">
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main>
+
+
+        <!-- CHECKOUT HERO -->
+
+        <section class="shop-hero cart-hero">
+
+            <div class="section">
+
+                <span class="hero-eyebrow">
+                    SECURE CHECKOUT
+                </span>
+
+                <h1>
+
+                    Complete Your
+                    <span>
+                        Order.
+                    </span>
+
+                </h1>
+
+                <p>
+
+                    Enter your details below
+                    to complete your order.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CHECKOUT -->
+
+        <section class="section">
+
+            <div class="checkout-layout">
+
+
+                <!-- CUSTOMER DETAILS -->
+
+                <div class="checkout-form-area">
+
+
+                    <div class="checkout-heading">
+
+                        <span class="hero-eyebrow">
+                            CUSTOMER DETAILS
+                        </span>
+
+                        <h2>
+                            Your information
+                        </h2>
+
+                        <p>
+                            Please provide your contact
+                            and delivery information.
+                        </p>
+
+                    </div>
+
+
+
+                    <form id="checkoutForm">
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="checkoutName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="checkoutName"
+                                    name="name"
+                                    placeholder="Your full name"
+                                    required>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="checkoutPhone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="checkoutPhone"
+                                    name="phone"
+                                    placeholder="Your phone number"
+                                    required>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="checkoutEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="checkoutEmail"
+                                name="email"
+                                placeholder="you@example.com"
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="checkoutAddress">
+                                Delivery Address
+                            </label>
+
+                            <input
+                                type="text"
+                                id="checkoutAddress"
+                                name="address"
+                                placeholder="Street address"
+                                required>
+
+                        </div>
+
+
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="checkoutCity">
+                                    City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="checkoutCity"
+                                    name="city"
+                                    placeholder="City"
+                                    required>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="checkoutPostal">
+                                    Postal Code
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="checkoutPostal"
+                                    name="postal"
+                                    placeholder="Postal code"
+                                    required>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="checkoutNotes">
+                                Order Notes
+                                <span>
+                                    Optional
+                                </span>
+                            </label>
+
+                            <textarea
+                                id="checkoutNotes"
+                                name="notes"
+                                rows="4"
+                                placeholder="Any additional information..."></textarea>
+
+                        </div>
+
+
+
+                        <div class="checkout-notice">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <div>
+
+                                <strong>
+                                    Secure Order
+                                </strong>
+
+                                <p>
+                                    Your information is used
+                                    only to process your order.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary checkout-submit"
+                            id="placeOrderButton">
+
+                            Place Order
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <a href="cart.html"
+                           class="back-to-cart">
+
+                            <i class="fa-solid fa-arrow-left"></i>
+
+                            Back to Cart
+
+                        </a>
+
+
+                    </form>
+
+
+
+                    <!-- SUCCESS -->
+
+                   <!-- =========================================================
+     ORDER SUCCESS
+========================================================= -->
+
+<div class="checkout-success" id="checkoutSuccess">
+
+    <div class="success-icon">
+        <i class="fa-solid fa-check"></i>
+    </div>
+
+    <span class="hero-eyebrow">
+        ORDER CONFIRMED
+    </span>
+
+    <h2>
+        Thank You<span>.</span>
+    </h2>
+
+    <p class="success-message">
+        Your order has been received successfully.
+        We have sent your order details for processing.
+    </p>
+
+    <div class="order-confirmation-card">
+
+        <div class="confirmation-row">
+
+            <span>
+                Order Number
+            </span>
+
+            <strong id="successOrderNumber">
+                —
+            </strong>
+
+        </div>
+
+        <div class="confirmation-row">
+
+            <span>
+                Customer
+            </span>
+
+            <strong id="successCustomerName">
+                —
+            </strong>
+
+        </div>
+
+        <div class="confirmation-row">
+
+            <span>
+                Email
+            </span>
+
+            <strong id="successCustomerEmail">
+                —
+            </strong>
+
+        </div>
+
+        <div class="confirmation-divider"></div>
+
+        <div class="confirmation-row total-row">
+
+            <span>
+                Order Total
+            </span>
+
+            <strong id="successOrderTotal">
+                R0.00
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="success-actions">
+
+        <a href="shop.html"
+           class="btn btn-primary">
+
+            Continue Shopping
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+        <a href="index.html"
+           class="success-home">
+
+            <i class="fa-solid fa-house"></i>
+
+            Back to Home
+
+        </a>
+
+    </div>
+
+</div>
+
+                        <span class="hero-eyebrow">
+                            ORDER RECEIVED
+                        </span>
+
+                        <h2>
+                            Thank You!
+                        </h2>
+
+                        <p>
+                            Your order has been received.
+                            We will contact you with the
+                            next steps.
+                        </p>
+
+                        <a href="index.html"
+                           class="btn btn-primary">
+
+                            Back to Home
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ORDER SUMMARY -->
+
+                <aside class="checkout-summary">
+
+
+                    <span class="hero-eyebrow">
+                        YOUR ORDER
+                    </span>
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+
+
+                    <div id="checkoutItems"
+                         class="checkout-items">
+
+                    </div>
+
+
+
+                    <div class="summary-divider"></div>
+
+
+
+                    <div class="summary-line">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="checkoutSubtotal">
+                            R0.00
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="summary-line">
+
+                        <span>
+                            Delivery
+                        </span>
+
+                        <strong>
+                            Calculated later
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="summary-divider"></div>
+
+
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="checkoutTotal">
+                            R0.00
+                        </strong>
+
+                    </div>
+
+
+
+                    <a href="cart.html"
+                       class="continue-shopping">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Edit Cart
+
+                    </a>
+
+
+                </aside>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <div class="brand-text">
+
+                    <strong>
+                        CANNA<span>PLUG</span>
+                    </strong>
+
+                    <small>
+                        CONNECTED TO QUALITY
+                    </small>
+
+                </div>
+
+                <p>
+                    A premium cannabis lifestyle
+                    experience in Pretoria.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Help
+                </h3>
+
+                <a href="reviews.html">
+                    Reviews
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Connect
+                </h3>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CannaPlug.
+                All rights reserved.
+            </p>
+
+            <p>
+                18+ only
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+</body>
+
+</html>
+```

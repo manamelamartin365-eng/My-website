@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore the CannaPlug store and experience.">
+
+    <title>Gallery | CannaPlug</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+</head>
+
+<body>
+
+    <!-- AGE VERIFICATION -->
+
+    <div class="age-gate" id="ageGate">
+
+        <div class="age-gate-backdrop"></div>
+
+        <div class="age-card">
+
+            <div class="age-logo">
+                CANNA<span>PLUG</span>
+            </div>
+
+            <div class="age-icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <p class="age-label">
+                AGE RESTRICTED
+            </p>
+
+            <h1>
+                Welcome to CannaPlug
+            </h1>
+
+            <p class="age-message">
+                You must be 18 years or older to enter
+                this website.
+            </p>
+
+            <div class="age-actions">
+
+                <button class="btn btn-primary"
+                        id="ageEnter">
+
+                    <i class="fa-solid fa-check"></i>
+                    I am 18+
+
+                </button>
+
+                <button class="btn btn-secondary"
+                        id="ageExit">
+
+                    Exit Website
+
+                </button>
+
+            </div>
+
+            <p class="age-notice">
+                By entering this website, you confirm
+                that you meet the minimum legal age
+                requirement applicable to you.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- HEADER -->
+
+    <header class="site-header" id="siteHeader">
+
+        <div class="header-container">
+
+            <a href="index.html" class="brand">
+
+                <div class="brand-mark">
+                    CP
+                </div>
+
+                <div class="brand-text">
+
+                    <strong>
+                        CANNA<span>PLUG</span>
+                    </strong>
+
+                    <small>
+                        CONNECTED TO QUALITY
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <nav class="main-nav">
+
+                <a href="index.html"
+                   class="nav-link">
+                    Home
+                </a>
+
+                <a href="shop.html"
+                   class="nav-link">
+                    Shop
+                </a>
+
+                <a href="about.html"
+                   class="nav-link">
+                    About
+                </a>
+
+                <a href="gallery.html"
+                   class="nav-link active">
+                    Gallery
+                </a>
+
+                <a href="faq.html"
+                   class="nav-link">
+                    FAQ
+                </a>
+
+                <a href="contact.html"
+                   class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="header-actions">
+
+                <button class="header-icon"
+                        id="searchToggle"
+                        aria-label="Search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+                <a href="cart.html"
+                   class="header-icon cart-button">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <span class="cart-count"
+                          id="cartCount">
+                        0
+                    </span>
+
+                </a>
+
+                <button class="mobile-menu-button"
+                        id="mobileMenuButton">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE NAV -->
+
+        <div class="mobile-nav" id="mobileNav">
+
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-panel" id="searchPanel">
+
+            <div class="search-container">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="siteSearch"
+                    placeholder="Search products, categories..."
+                    autocomplete="off">
+
+                <button id="closeSearch">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+            <div class="search-results"
+                 id="searchResults">
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- GALLERY HERO -->
+
+        <section class="shop-hero"
+                 style="
+                 min-height:55vh;
+                 display:flex;
+                 align-items:center;
+                 padding-top:120px;
+                 background:
+                 radial-gradient(
+                 circle at 75% 50%,
+                 rgba(159,207,103,.12),
+                 transparent 35%
+                 ),
+                 #080908;
+                 ">
+
+            <div class="section">
+
+                <span class="hero-eyebrow">
+                    INSIDE CANNA PLUG
+                </span>
+
+                <h1 style="
+                    font-size:clamp(45px,7vw,85px);
+                    line-height:1;
+                    letter-spacing:-3px;
+                ">
+
+                    Our
+                    <span style="color:#9fcf67;">
+                        Space.
+                    </span>
+
+                </h1>
+
+                <p style="
+                    max-width:620px;
+                    margin-top:25px;
+                    color:#a5aaa2;
+                    font-size:14px;
+                    line-height:1.8;
+                ">
+
+                    Take a look inside the CannaPlug
+                    experience and get a feel for our
+                    space before you visit.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span class="hero-eyebrow">
+                    THE STORE
+                </span>
+
+                <h2>
+                    See where the
+                    <span>experience happens.</span>
+                </h2>
+
+                <p>
+                    Explore our space through the
+                    CannaPlug gallery.
+                </p>
+
+            </div>
+
+
+            <div class="cannaplug-gallery">
+
+                <button class="gallery-item"
+                        data-image="images/store 1.jpg.png"
+                        data-title="CannaPlug Store">
+
+                    <img
+                        src="images/store 1.jpg.png"
+                        alt="CannaPlug store">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            VIEW IMAGE
+                        </span>
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </div>
+
+                </button>
+
+
+                <button class="gallery-item"
+                        data-image="images/store 2.jpg.png"
+                        data-title="CannaPlug Store">
+
+                    <img
+                        src="images/store 2.jpg.png"
+                        alt="CannaPlug store">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            VIEW IMAGE
+                        </span>
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </div>
+
+                </button>
+
+
+                <button class="gallery-item"
+                        data-image="images/store 3.jpg.png"
+                        data-title="CannaPlug Store">
+
+                    <img
+                        src="images/store 3.jpg.png"
+                        alt="CannaPlug store">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            VIEW IMAGE
+                        </span>
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </div>
+
+                </button>
+
+
+                <button class="gallery-item"
+                        data-image="images/store 4.jpg.png"
+                        data-title="CannaPlug Store">
+
+                    <img
+                        src="images/store 4.jpg.png"
+                        alt="CannaPlug store">
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            VIEW IMAGE
+                        </span>
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LIGHTBOX -->
+
+        <div class="gallery-lightbox"
+             id="galleryLightbox">
+
+            <button class="lightbox-close"
+                    id="lightboxClose">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <button class="lightbox-arrow lightbox-prev"
+                    id="lightboxPrev">
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <div class="lightbox-content">
+
+                <img
+                    id="lightboxImage"
+                    src=""
+                    alt="CannaPlug gallery image">
+
+                <p id="lightboxTitle">
+                    CannaPlug Store
+                </p>
+
+            </div>
+
+
+            <button class="lightbox-arrow lightbox-next"
+                    id="lightboxNext">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- CTA -->
+
+        <section class="store-section">
+
+            <div class="store-content">
+
+                <span>
+                    COME EXPERIENCE IT
+                </span>
+
+                <h2>
+                    See it online.
+                    <span>Experience it in person.</span>
+                </h2>
+
+                <p>
+                    Have questions before visiting?
+                    Get in touch with our team.
+                </p>
+
+                <a href="contact.html"
+                   class="btn btn-primary">
+
+                    Contact Us
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <div class="brand-text">
+
+                    <strong>
+                        CANNA<span>PLUG</span>
+                    </strong>
+
+                    <small>
+                        CONNECTED TO QUALITY
+                    </small>
+
+                </div>
+
+                <p>
+                    A premium cannabis lifestyle
+                    experience in Pretoria.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Help
+                </h3>
+
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Connect
+                </h3>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CannaPlug. All rights reserved.
+            </p>
+
+            <p>
+                18+ only
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
